@@ -6,7 +6,7 @@
 }
 
 body {
-  /* background: rgb(100, 155, 177); */
+  background: rgb(212, 238, 248);
   /* color: white;   */
   font-family: "Montserrat", "Lora", "Nunito", sans-serif;
 }
@@ -37,12 +37,12 @@ header {
   padding: 12px 1px;
 }
 
-ul li a{
-    text-decoration: none;
-    color: black;
+ul li a {
+  text-decoration: none;
+  color: black;
 }
-.pointer{
-    cursor: pointer;
+.pointer {
+  cursor: pointer;
 }
 
 .logo {
@@ -80,38 +80,16 @@ ul li a{
   position: absolute;
   z-index: 10;
   background: white;
+  padding: 5px;
   display: none;
+  border-radius: 10px;
+  min-width: 100px;
+  width: 10vw;
+  text-align: center;
 }
 .cart {
   display: flex;
   padding: 1.3vw 2vw;
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (max-width: 992px) {
-    .search{
-        margin:0;
-    }
-    .search input[type="text"]{
-        width: 50vw;
-    }
-    .account{
-        position: relative;
-        left: -10px;
-    }
-    .cart p{
-        display: none;
-    }
-    .hero-image{
-        height: 50vh;
-    }
-} */
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .search input[type="text"] {
-    width: 80vw;
-  }
 }
 
 /* ==================== Hero Section =============================== */
@@ -128,8 +106,9 @@ ul li a{
 
 /* ======= Products Card CSS ======== */
 .card {
-  margin: 0 2vw;
-  padding: 10px;
+  margin: 1vw 2vw;
+  padding: 15px;
+  background-color: white;
 }
 .cat-overview {
   display: flex;
@@ -171,7 +150,7 @@ ul li a{
   font-size: medium;
   padding-top: 5px;
   width: 100%;
-  color: rgb(24, 170, 60);
+  color: green;
   text-align: center;
 }
 /* =============== Footer Section =============== */
@@ -180,4 +159,37 @@ footer {
   color: var(--light-color);
   padding: 15px;
   font-family: "Nunito", sans-serif;
+}
+footer p{
+  margin: 0 15px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (max-width: 992px) {
+    .search{
+        margin:0;
+    }
+    .search input[type="text"]{
+        width: 50vw;
+    }
+    .account{
+        position: relative;
+        left: -10px;
+    }
+    .cart p{
+        display: none;
+    }
+    .hero-image{
+        height: 50vh;
+    }
+} */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .search input[type="text"] {
+    width: 80vw;
+  }
+  .card {
+    margin: 2vw 2vw;
+  }
 }
