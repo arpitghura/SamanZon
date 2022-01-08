@@ -1,6 +1,5 @@
 // DropDown Menu Showing JS in NavBar
 var number=0;
-console.log(number);
 DropdownBtn.addEventListener("click" , ()=>{
     
     if(number == 0){
@@ -14,3 +13,15 @@ DropdownBtn.addEventListener("click" , ()=>{
     
 })
 // --------------- Dropdown menu js ends-----------
+
+//Cart Btn Click
+cart.addEventListener("click", ()=>{
+    alert("Cart is Empty!");
+})
+
+//News Bar Hidden Timeout Function
+setTimeout(hideNewsBar,5000);
+
+function hideNewsBar() {
+    newsBar.style.display="none";
+}

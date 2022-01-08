@@ -6,8 +6,7 @@
 }
 
 body {
-  background: rgb(212, 238, 248);
-  /* color: white;   */
+  background: rgb(168, 217, 236);
   font-family: "Montserrat", "Lora", "Nunito", sans-serif;
 }
 
@@ -24,6 +23,12 @@ header {
   background-color: white;
   position: sticky;
   top: 0;
+}
+#newsBar {
+  background-color: rebeccapurple;
+  color: white;
+  font-family: "Montserrat", "Segoe UI", sans-serif;
+  padding: 15px;
 }
 .navbar {
   display: flex;
@@ -48,6 +53,7 @@ ul li a {
 .logo {
   padding: 1.3vw 2.2vw;
   font-size: 1.2em;
+  color: rebeccapurple;
 }
 
 .search {
@@ -63,11 +69,11 @@ ul li a {
 }
 
 .search-btn {
-  padding: 5px;
+  padding: 5px 0;
   color: var(--bold-color);
   position: relative;
-  right: 30px;
-  top: 3px;
+  right: 22px;
+  top: 1px;
 }
 
 .links {
@@ -115,8 +121,9 @@ ul li a {
   justify-content: space-between;
 }
 .cat-overview button {
-  background-color: var(--main-bg-color);
+  background-color: rebeccapurple;
   border: none;
+  color: white;
   padding: 7px 10px;
   margin: 2px;
   border-radius: 6px;
@@ -150,7 +157,7 @@ ul li a {
   font-size: medium;
   padding-top: 5px;
   width: 100%;
-  color: green;
+  color: rebeccapurple;
   text-align: center;
 }
 /* =============== Footer Section =============== */
@@ -160,30 +167,10 @@ footer {
   padding: 15px;
   font-family: "Nunito", sans-serif;
 }
-footer p{
+footer p {
   margin: 0 15px;
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (max-width: 992px) {
-    .search{
-        margin:0;
-    }
-    .search input[type="text"]{
-        width: 50vw;
-    }
-    .account{
-        position: relative;
-        left: -10px;
-    }
-    .cart p{
-        display: none;
-    }
-    .hero-image{
-        height: 50vh;
-    }
-} */
-
+/* ===================== Media Queries ======================= */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .search input[type="text"] {
